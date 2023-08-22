@@ -13,11 +13,10 @@
   font-weight: bold;
 }
 :root {
-  --font-family: 'Roblox', Roboto;
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
-  --bg-color: #000000f1;
+  --bg-color: #fffffff1;
   --primary-color: #1f1b1b;
   --secondary-color: #d035ff;
   --primary-shadow: #8b8eaf;
@@ -37,7 +36,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 3.5rem;
-  background-color: #0000000f;
+  background-color: var(--bg-color);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   font-size: 1em;
 
@@ -65,7 +64,6 @@ nav ul {
 }
 
 nav ul li {
-  font-family: var(--font-family);
   font-weight: var(--bold-font);
 }
 
@@ -106,15 +104,11 @@ a:hover {
 
 
 .hero {
-  background-image: url('Polygon-Luminary.svg');
-
-  height:100%;
-  width:90%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
-  /*max-width: 68.75rem;*/
+  max-width: 68.75rem;
   margin: auto;
 }
 
