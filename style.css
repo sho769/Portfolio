@@ -144,7 +144,7 @@ span{
 }
 .tab-contents ul li span{
   color: #b54769;
-  font-size: 14px;
+  font-size: 18px;
 }
 .tab-contents{
   display:none;
@@ -173,6 +173,7 @@ span{
 }
 .services-list div i{
   margin-bottom: 30px;
+  padding: 0 10px;
   font-size: 50px;
 }
 .services-list div h2{

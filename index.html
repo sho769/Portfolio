@@ -4,293 +4,181 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!--CSS Styles -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
-
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/icons/"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/icons/"
-    />
-
-    <!-- Animate CSS CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/9c4748654a.js" crossorigin="anonymous"></script>
     <title>Shourya Raman | Developer</title>
   </head>
-
   <body>
-    <!-- Navbar -->
-    <nav>
-      <h1>Shourya Raman</h1>
-      <ul class="navigation">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-      <button class="burger-menu" id="burger-menu">
-        <ion-icon class="bars" name="menu-outline"></ion-icon>
-      </button>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero" id="about">
-      <img
-        src="assets/images/photo.jpeg"
-        alt="jane-doe"
-        loading="lazy"
-        class="hero-img"
-      />
-      <div class="bio animate__animated animate__shakeX">
-        <h2 class="bio-title">About Me</h2>
-        <p class="bio-text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
-          dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
-          inventore tempore minus nemo, iste ullam illo laboriosam maiores
-          repudiandae quos!
-        </p>
-      </div>
-</section>
-
-    <!-- More about -->
-
-
-    <section class="more-about">
-      <h2>More About Me</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-        nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
-        autem deleniti cupiditate molestias quis unde quae totam porro dicta
-        iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
-        nostrum dolor minus, libero delectus praesentium perferendis
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-        consequuntur labore? Ea totam voluptas amet!
-      </p>
-    </section>
-
-    <!-- Skills section -->
-
-    <section class="skills" id="skills">
-      <h2 class="skill-header">My Top Skills</h2>
-
-      <div class="skills-wrapper">
-        <div class="first-set animate__animated animate__pulse">
-          <img
-            src="assets/icons/icons8-html-5.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-css3.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-javascript.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
-
-        <div class="second-set animate__animated animate__pulse">
-          <img
-            src="assets/icons/icons8-bootstrap.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-react-native.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-git.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo">
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Skills</a></li>
+            <li><a href="#portfolio">Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          
+        </nav>
+        <div class="header-text">
+          <p>Software Developer</p>
+          <h1>Hi, I'm <span>Shourya Raman</span><br> from India</h1>
         </div>
       </div>
-    </section>
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/photo.jpeg">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>A creative and goal-oriented graduate possessing excellent communication, problem-solving and leadership skills with a flair to explore.
+            </p>
 
-    <!-- Projects section -->
-
-    <section class="projects" id="projects">
-      <h2 class="projects-title">Some of my Recent Works</h2>
-      <div class="projects-container">
-        <div class="project-container project-card">
-          <img
-            src="assets/images/expenseTracker.png"
-            alt="expense-tracker"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Expense Tracker</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
-        </div>
-        <div class="project-container project-card">
-          <img
-            src="assets/images/netflixClone.png"
-            alt="netflic-clone"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Netflix Clone</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
-        </div>
-        <div class="project-container project-card">
-          <img
-            src="assets/images/greenyEarth.png"
-            alt="greeny-earth"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Greeny Earth</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+              </div>
+              <div class="tab-contents active-tab" id="experience">
+                <ul>
+                  <li><span>October 2021 - Current</span><br>System Engineer at Tata Consultancy Services<br>Worked on multiple projects and supported multiple JAVA REST API applications<br>worked on CI/CD pipeline on Jenkins<br>Helped  to sucessfully migrate gemfire 8 framework to gemfire 9 fromework</li>
+                  <li><span>April 2021 - September 2021</span><br>Software Development Intern at Rapidd Technologies<br>Worked on company's product web-based application called Vault ERP (Enterprise resource platform) on Angular, C# and .NET framework</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li><span>2017-2021</span><br>Bachelors of Computer Science Engineering<br>Chandigarh University<br>7.02 CGPA</li>
+                  <li><span>2015-2017</span><br>Indraprastha Public school (CBSE) <br>Percentage:74%</li>
+                </ul>
+              </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+    <!-- -----------------services-------------------->
+    <div id="services">
+      <div class="container">
+          <h1 class="sub-title">My Skills</h1>
+          <div class="services-list">
+            <div>
+              <i class="fa-solid fa-code"></i>
+              <h2>Can read code in</h2>
 
-    <!-- Contact section -->
-
-    <section class="contact" id="contact">
-      <h2>Get In Touch With Me</h2>
-      <div class="contact-form-container">
-        <div class="contact-form">
-          <form action="https://formspree.io/f/xyylngw" method="POST">
-            <div class="form-control">
-              <label for="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="sender-name"
-                placeholder="Enter Your Name"
-                class="input-field"
-                required
-              />
+              <p><i class="fa-brands fa-java"></i><i class="fa-brands fa-python"></i><i class="fa-brands fa-square-js"></i><i class="fa-solid fa-database"></i><i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3"></i></p>
             </div>
-            <div class="form-control">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="sender-email"
-                placeholder="Enter Your Email"
-                class="input-field"
-                required
-              />
+            <div>
+              <i class="fa-solid fa-crop"></i>
+              <h2>Tools I understand</h2>
+
+              <p><i class="fa-brands fa-git"></i><i class="fa-brands fa-linux"></i><i class="fa-brands fa-windows"></i></p>
+                <a href="#">Learn more</a>
             </div>
-            <div class="form-control">
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                cols="60"
-                rows="10"
-                placeholder="Enter Your Message"
-                name="message"
-                class="input-field"
-                required
-              ></textarea>
+            <div>
+              <i class="fa-brands fa-android"></i><i class="fa-brands fa-app-store"></i>
+              <h2>App Development</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
+                dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
+                inventore tempore minus nemo, iste ullam illo laboriosam maiores
+                repudiandae quos!</p>
+                <a href="#">Learn more</a>
             </div>
-            <input
-              type="submit"
-              value="Submit"
-              id="submit-btn"
-              class="submit-btn"
-            />
-          </form>
+          </div>
+      </div>
+    </div>
+    <!-- --------------------------portfolio------------------------------>
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+           <div class="work">
+            <img src="images/work-1.png">
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>The app connects you to talented people around the world.</p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png">
+            <div class="layer">
+              <h3>Weather App</h3>
+              <p>The app connects you to talented people around the world.</p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">  
+            <img src="images/work-3.png">
+            <div class="layer">
+              <h3>online shopping App</h3>
+              <p>The app connects you to talented people around the world.</p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-------------------------contact-------------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>shourya.vraman@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+91 7982854777</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your email" required>
+              <textarea name="message" name="message" placeholder="Your Message" required></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
         </div>
       </div>
-    </section>
-
-    <!-- Social accounts - Fixed to the right -->
-
-    <div class="socials">
-      <a href="#" target="_blank"
-        ><img
-          src="assets/icons/icons8-twitter-circled.gif"
-          alt="Twitter"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="#" target="_blank"
-        ><img
-          src="assets/icons/icons8-instagram.gif"
-          alt="Instagram"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="#" target="_blank"
-        ><img
-          src="assets/icons/icons8-linkedin-circled.gif"
-          alt="Linkedin"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="#" target="_blank"
-        ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
-      /></a>
+        <div class="copyright">
+          <p>Copyright &copy; Shourya. Made with <i class="fa-solid fa-heart"></i> </p>
+        </div>
     </div>
 
-    <!-- Footer section -->
 
-    <footer>
-      <p class="copy">&copy; Copyright 2023</p>
-      <p class="copy">
-        Built with &#x2661; by
-        <a href="" target="_blank"
-          >Shourya Raman</a
-        >
-      </p>
-</footer>
+   <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+   </script>
+   <script>
+    var sidemenu = document.getElementById("sidemenu");
 
-    <!-- Website scripts -->
-    <script src="assets/js/app.js"></script>
-
-    <!-- Ion icons scripts -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+    function openmenu(){
+      sidemenu.style.right = "0";
+    }
+    function closemenu(){
+      sidemenu.style.right = "-150px";
+    }
+   </script>
   </body>
 </html>
