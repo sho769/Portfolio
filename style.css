@@ -279,6 +279,7 @@ span{
   height: 100%;
 }
 .btn{
+  font-family: 'poppins' , Sans-serif;
   display:block;
   margin: 50px auto;
   width: fit-content;
