@@ -333,6 +333,7 @@ span{
   transform: translateY(-5px);
 }
 .btn.btn2{
+  font-family: 'poppins' , Sans-serif;
   display: inline-block;
   background: -webkit-linear-gradient(left,rgb(255, 166, 46), #ff004f);
 }
@@ -357,6 +358,7 @@ form .btn2{
   cursor: pointer;
 }
 .copyright{
+  font-family: 'poppins' , Sans-serif;
   width: 100%;
   text-align: center;
   padding: 25px 0;
