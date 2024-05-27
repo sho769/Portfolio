@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/9c4748654a.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/9c4748654a.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Shourya Raman | Developer</title>
   </head>
   <body>
     <div id="header">
       <div class="container">
         <nav>
-          <img src="images/logo.png" class="logo">
+          <img src="images/logo.png" class="logo" />
           <ul id="sidemenu">
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -22,11 +25,21 @@
             <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
           </ul>
           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-          
         </nav>
         <div class="header-text">
           <p>Software Developer</p>
-          <h1>Hi, I'm <span class="font lists">Shourya Raman</span><br> from India</h1>
+          <h1>Hi, I'm <span class="font lists">Shourya Raman</span><br /></h1>
+          <h4>Can read code in</h4>
+          <div class="services-list">
+            <p>
+              <i class="fa-brands fa-java"></i>
+              <i class="fa-brands fa-python"></i>
+              <i class="fa-brands fa-square-js"></i>
+              <i class="fa-solid fa-database"></i>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3"></i>
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -34,60 +47,83 @@
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="images/photo.jpeg">
+            <img src="images/photo.jpeg" />
           </div>
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
-            <p>A creative and goal-oriented graduate possessing excellent communication, problem-solving and leadership skills with a flair to explore.
+            <p>
+              A creative and goal-oriented graduate possessing excellent
+              communication, problem-solving and leadership skills with a flair
+              to explore.
             </p>
 
-              <div class="tab-titles">
-                <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
-                <p class="tab-links" onclick="opentab('education')">Education</p>
-              </div>
-              <div class="tab-contents active-tab" id="experience">
-                <ul>
-                  <li><span>System Engineer at Tata Consultancy Services</span>
-                    <div class="description">
-                        <ul>
-                        <li>October 2021 - Current </li>
-                        <li>Worked on multiple projects and supported multiple JAVA REST API applications</li>
-                        <li>worked on CI/CD pipeline on Jenkins</li>
-                        <li>Helped  to sucessfully migrate gemfire 8 framework to gemfire 9 fromework</li>
-                        </ul> 
-                    </div>
-                  </li>
-                  <li><span>Software Development Intern at Rapidd Technologies</span>
-                    <div class="description"> 
-                      <ul>
-                        <li>April 2021 - September 2021</li>
-                        <li>Worked on company's product web-based application called Vault ERP (Enterprise resource platform) on Angular, C# and .NET framework</li>
-                      </ul>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="tab-contents" id="education">
-                <ul>
-                  <li><span>2017-2021</span>
-                    <div class="description">
-                      <ul>
-                      <li>Bachelors of Technology in Computer Science Engineering</li>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="experience">
+              <ul>
+                <li>
+                  <span>System Engineer at Tata Consultancy Services</span>
+                  <div class="description">
+                    <ul>
+                      <li>October 2021 - January 2024</li>
+                      <li>
+                        Worked on multiple projects and supported multiple JAVA
+                        REST API applications
+                      </li>
+                      <li>worked on CI/CD pipeline on Jenkins</li>
+                      <li>
+                        Helped to sucessfully migrate gemfire 8 framework to
+                        gemfire 9 fromework
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span
+                    >Software Development Intern at Rapidd Technologies</span
+                  >
+                  <div class="description">
+                    <ul>
+                      <li>April 2021 - September 2021</li>
+                      <li>
+                        Worked on company's product web-based application called
+                        Vault ERP (Enterprise resource platform) on Angular, C#
+                        and .NET framework
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2017-2021</span>
+                  <div class="description">
+                    <ul>
+                      <li>
+                        Bachelors of Technology in Computer Science Engineering
+                      </li>
                       <li>Chandigarh University</li>
                       <li>7.02 CGPA</li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li><span>2015-2017</span>
-                    <div class="description">
-                      <ul>
-                      <li>Indraprastha Public school (CBSE) </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span>2015-2017</span>
+                  <div class="description">
+                    <ul>
+                      <li>Indraprastha Public school (CBSE)</li>
                       <li>Percentage:74%</li>
-                      </ul>
-                    </div>
-                  </li>
-                </ul>
-              </div>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -124,38 +160,58 @@
       <div class="container">
         <h1 class="sub-title">My Works</h1>
         <div class="work-list">
-           <div class="work">
-            <img src="images/work-1.png">
+          <div class="work">
+            <img src="images/work-1.png" />
             <div class="layer">
               <h3>QRAP</h3>
-              <p>Quick Responsive Attandence Portal<br>
-                This app lets teachers mark Attendence of their students effortlessly by saving their time and effort.
-                Basically it is mixture of mobile app and a attendance portal which enables students to mark their attendances by scanning
-                the QR code generated by teacher and an automated approach attendance portal.
+              <p>
+                Quick Responsive Attandence Portal<br />
+                This app lets teachers mark Attendence of their students
+                effortlessly by saving their time and effort. Basically it is
+                mixture of mobile app and a attendance portal which enables
+                students to mark their attendances by scanning the QR code
+                generated by teacher and an automated approach attendance
+                portal.
               </p>
-              <a href="https://github.com/sho769/QRAP"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://github.com/sho769/QRAP"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
             </div>
           </div>
           <div class="work">
-            <img src="images/work-2.png">
+            <img src="images/work-2.png" />
             <div class="layer">
               <h3>MARKET PALACE</h3>
-              <p>This webapp is basically a online shopping App which lets you buy various things on the marketplace store with keeping your details in a database which is maintained. 
-                Multiple features like dynamic rendering order tracking online payment gateway are implemented</p>
-              <a href="https://github.com/sho769/marketplace"><i class="fas fa-external-link-alt"></i></a>
+              <p>
+                This webapp is basically a online shopping App which lets you
+                buy various things on the marketplace store with keeping your
+                details in a database which is maintained. Multiple features
+                like dynamic rendering order tracking online payment gateway are
+                implemented
+              </p>
+              <a href="https://github.com/sho769/marketplace"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
             </div>
           </div>
-          <div class="work">  
-            <img src="images/work-3.png">
+          <div class="work">
+            <img src="images/work-3.png" />
             <div class="layer">
               <h3>TIC - TAC - TOE</h3>
-              <p>This app allows you to play in the classix tic tac toe game in various modes and shows a good logic building skills which 
-                has two modes to play which are multiplayer and singleplayer.</p>
-              <a href="https://github.com/sho769/Tic-Tac-Toe"><i class="fas fa-external-link-alt"></i></a>
+              <p>
+                This app allows you to play in the classix tic tac toe game in
+                various modes and shows a good logic building skills which has
+                two modes to play which are multiplayer and singleplayer.
+              </p>
+              <a href="https://github.com/sho769/Tic-Tac-Toe"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
             </div>
           </div>
         </div>
-        <a href="https://github.com/sho769?tab=repositories" class="btn">See more</a>
+        <a href="https://github.com/sho769?tab=repositories" class="btn"
+          >See more</a
+        >
       </div>
     </div>
     <!-------------------------contact-------------------------->
@@ -165,54 +221,75 @@
           <div class="contact-left">
             <h1 class="sub-title">Contact Me</h1>
             <p><i class="fa-solid fa-envelope"></i>shourya.vraman@gmail.com</p>
-            <p><i class="fa-solid fa-phone"></i>+91 7982854777</p>
+            <p><i class="fa-solid fa-phone"></i>+1 905-462-6935</p>
             <div class="social-icons">
-              <a href="https://www.linkedin.com/in/shourya-raman-1a630815a/"><i class="fa-brands fa-linkedin"></i></a>
-              <a href="https://www.instagram.com/shourya__99/"><i class="fa-brands fa-instagram"></i></a>
-              <a href="https://github.com/sho769"><i class="fa-brands fa-github"></i></i></a>
-              <a href="https://twitter.com/b198bccb2b9c484"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/in/shourya-raman-1a630815a/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/shourya__99/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://github.com/sho769"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://twitter.com/b198bccb2b9c484"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
             </div>
-            <a href="assets/CV.pdf" download class="btn btn2">Download CV</a>
+            <a href="assets/Shourya_Resume.pdf" download class="btn btn2"
+              >Download Resume</a
+            >
           </div>
           <div class="contact-right">
             <form>
-              <input type="text" name="Name" placeholder="Your Name" required>
-              <input type="email" name="email" placeholder="Your email" required>
-              <textarea name="message" name="message" placeholder="Your Message" required></textarea>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="message"
+                name="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
               <button type="submit" class="btn btn2">Submit</button>
             </form>
           </div>
         </div>
       </div>
-        <div class="copyright">
-          <p>Copyright &copy; Shourya. Made with <i class="fa-solid fa-heart"></i> </p>
-        </div>
+      <div class="copyright">
+        <p>
+          Copyright &copy; Shourya. Made with <i class="fa-solid fa-heart"></i>
+        </p>
+      </div>
     </div>
 
-
-   <script>
+    <script>
       var tablinks = document.getElementsByClassName("tab-links");
       var tabcontents = document.getElementsByClassName("tab-contents");
-      function opentab(tabname){
-        for(tablink of tablinks){
+      function opentab(tabname) {
+        for (tablink of tablinks) {
           tablink.classList.remove("active-link");
         }
-        for(tabcontent of tabcontents){
+        for (tabcontent of tabcontents) {
           tabcontent.classList.remove("active-tab");
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
       }
-   </script>
-   <script>
-    var sidemenu = document.getElementById("sidemenu");
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
 
-    function openmenu(){
-      sidemenu.style.right = "0";
-    }
-    function closemenu(){
-      sidemenu.style.right = "-150px";
-    }
-   </script>
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-150px";
+      }
+    </script>
   </body>
 </html>
